@@ -2,7 +2,6 @@
 <html lang="en">
 
 
-
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,87 +36,17 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<!-- Custom Styles for this File 
-<link href="bootstrap-3.3.6-dist/css/starter-theme.css" rel="stylesheet">
--->
-
+<!-- Custom Styles for this File --> 
+<link href="index.css" rel="stylesheet">
 
 <!-- 
 =======================================================
-Document Specific Stlye Changes Specified Here 
-======================================================= -->
+Document Specific Style Changes Specified Here 
+======================================================= 
 <style type="text/css">
 
-#myname { padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; border-bottom: none; }
-/* Center Pills/Tabs for NavBar */
-.center-pills {
-display: inline-block;
-}
-
- 	
-/* Navigation Bar Tabs Appearance Changes (Tabs Visible on Medium+ Displays) */	
-
-.nav-tabs > li > a {
-border-radius: 4px 4px 0 0;
-border: none;
-margin-left: 0px;
-margin-right: 0px;
-}
-
-.nav-tabs > li > a:focus{
-
-outline: none;
-border-radius: 4px 4px 2px 2px;
-border: none;
-border-bottom: none;
-margin-left: 0px;
-margin-right: 0px;
-margin-bottom: -2px;
-/* Border/Shadow of Tab (Manilla Folder)*/    
--webkit-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
--moz-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
-}
-
-.nav-tabs > li > a:hover{
-
-outline: none;
-border-radius: 4px 4px 2px 2px;
-border: none;
-border-bottom: 1px solid grey;
-margin-left: 0px;
-margin-right: 0px;
-margin-bottom: -1px;
-/* Border/Shadow of Tab (Manilla Folder)*/
--webkit-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
--moz-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
-}
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li.active > a:hover{
-
-outline: none;
-border-radius: 4px 4px 2px 2px;
-border: none;
-border-bottom: 1px solid white;
-margin-left: 0px;
-margin-right: 0px;
-margin-bottom: -2px;
-
-/* Border/Shadow of Tab (Manilla Folder)*/
--webkit-box-shadow:inset 0px 2px 0px 1px grey;
--moz-box-shadow:inset 0px 2px 0px 1px grey;
-box-shadow:inset 0px 2px 0px 1px grey;
-}
-
-.nav-tabs {
-margin-left: 0px;
-margin-right: 0px;
-border-bottom: 2px solid grey;}
-
 </style>
+-->
 
 <!-- Theme CSS through MaxCDN (cached, can make website faster)-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
@@ -127,55 +56,72 @@ border-bottom: 2px solid grey;}
 
 
 
-
-
-
-
 <body>
 <!--
 =======================================================================================
-TITLE: INDEX.HTML
-DESCRP: HTML File for Default/Main Page for My Personal Website
-This file will be written as a HTML5 polygot document (HTML5 & XHTML).
-My website uses Bootstrap as its front-end framework. 
+TITLE: PORTFOLIO.HTML
+DESCRP: Portfolio Page for Personal Website
 AUTHOR: Colton Eakins
-CREATED: July 23, 2016
-LASTUPDATE: July 24, 2016
+CREATED: July 28, 2016
+LASTUPDATE: July 28, 2016
 =======================================================================================
 -->
-<div class="container-fluid">
+<div class="container-fluid" id="top">
 <div class="page-header" id="myname">
 <h1 class="text-center"><strong>Colton Eakins</strong></h1>
 </div></div>
 
+<!-- For Medium+ Displays, Use Tabs -->
 <div class="container-fluid text-center hidden-xs" id="navi">
-<ul class="nav nav-tabs center-pills">
-<li role="presentation"><a href="#" data-toggle="tab">Resume</a></li>
-<li role="presentation"><a href="#" data-toggle="tab">Portfolio</a></li>
-<li role="presentation"><a href="#" data-toggle="tab">Anthology</a></li>
-<li role="presentation"><a href="#" data-toggle="tab">Contact</a></li>
+<ul class="nav nav-tabs center-pills" role="tablist">
+<li role="presentation"><a href="index.html" aria-controls="resume" role="tab">Resume</a></li>
+<li role="presentation"><a href="portfolio.html" aria-controls="portfolio" role="tab">Portfolio</a></li>
+<li role="presentation" class="active"><a href="contact.html" aria-controls="contact" role="tab">Contact</a></li>
 </ul>
 </div>
 
-<div class="container-fluid">
-<!-- Tab panes -->
-<div class="tab-content">
-<div class="tab-pane" id="Resume">Resume Tab</div>
-<div class="tab-pane" id="Portfolio">Portfolio Tab</div>
-<div class="tab-pane" id="anthologytab">Anthology Tab</div>
-<div class="tab-pane" id="contacttab">Contact Tab</div>
+<!-- For Small Mobile Displays, Use Nav Pills -->
+<div class="container-fluid hidden-sm hidden-md hidden-lg text-center">
+<ul class="nav nav-pills nav-stacked center-pills">
+<li role="presentation"><a href="index.html" aria-controls="resume" role="pill">Resume</a></li>
+<li role="presentation"><a href="portfolio.html" aria-controls="portfolio" role="pill">Portfolio</a></li>
+<li role="presentation" class="active"><a href="contact.html" aria-controls="contact" role="pill">Contact</a></li>
+</ul>
 </div>
 
+<!--
+<div class="container-fluid">
+Tab panes
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane" id="resume">Resume Tab</div>
+<div role="tabpanel" class="tab-pane" id="portfolio">Portfolio Tab</div>
+<div role="tabpanel" class="tab-pane" id="anthology">Anthology Tab</div>
+<div role="tabpanel" class="tab-pane" id="contact">Contact Tab</div>
+</div>
+-->
 
-
-
-
-
-
-
-
-
-
+<div class="container center-block" id="resumebody">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="upper-case resumeheaders" id="education">
+			<strong>C<small>ONTACT</small></strong>
+			<hr/>
+			</div>
+			<p class="text-center showcasetext">
+			<strong>Email: coltoneakins@gmail.com</strong><br/>
+			I have email notifications set up on my cell phone; I will respond to your message immediately if not within a few hours.<br/>
+			Thank you for taking the time to consider me and review my website.   
+			</p>
+		</div>
+	</div>
+</div>
+<div class="container-fluid" id="footer">
+	<div class="row">
+	<div class="col-xs-12 text-right">
+	Back to <a href="#top">Top</a>. 
+	</div>
+	</div>
+</div>
 
 
 

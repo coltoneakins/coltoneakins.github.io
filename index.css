@@ -1,0 +1,141 @@
+/*
+Stylesheets for Colton Eakins Personal Website
+AUTHOR: Colton Eakins
+DATE: July 28, 2016
+LASTUPDATE: July 28, 2016
+*/
+
+html {
+overflow-y: scroll;
+}
+
+#navi {
+height: 41px;
+border-bottom: 2px solid grey;
+}
+
+#myname { padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; border-bottom: none; }
+/* Center Pills/Tabs for NavBar */
+.center-pills {
+display: inline-block;
+}
+ 	
+/* Navigation Bar Tabs Appearance Changes (Tabs Visible on Medium+ Displays) */	
+
+.nav-tabs > li > a {
+border-radius: 4px 4px 0 0;
+border: none;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+.nav-tabs > li > a:focus{
+
+outline: none;
+border-radius: 4px 4px 2px 2px;
+border: none;
+border-bottom: none;
+margin-left: 0px;
+margin-right: 0px;
+margin-bottom: -2px;
+/* Border/Shadow of Tab (Manilla Folder)*/    
+-webkit-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
+-moz-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
+box-shadow:inset 0px 2px 0px 1px #BFBFBF;
+}
+
+.nav-tabs > li > a:hover{
+
+outline: none;
+border-radius: 4px 4px 2px 2px;
+border: none;
+border-bottom: 1px solid grey;
+margin-left: 0px;
+margin-right: 0px;
+margin-bottom: -1px;
+/* Border/Shadow of Tab (Manilla Folder)*/
+-webkit-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
+-moz-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
+box-shadow:inset 0px 2px 0px 1px #BFBFBF;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+
+outline: none;
+border-radius: 4px 4px 2px 2px;
+border: none;
+border-bottom: 1px solid white;
+margin-left: 0px;
+margin-right: 0px;
+margin-bottom: -2px;
+/* Border/Shadow of Tab (Manilla Folder)*/
+-webkit-box-shadow:inset 0px 2px 0px 1px grey;
+-moz-box-shadow:inset 0px 2px 0px 1px grey;
+box-shadow:inset 0px 2px 0px 1px grey;
+}
+
+.nav-tabs {
+margin-left: 0px;
+margin-right: 0px;
+border-bottom: 2px solid grey;}
+
+#resumebody {
+padding-top: 15px;
+}
+
+.resumeheaders {
+color: black;
+font-size: 25px;
+letter-spacing: 2px;
+}
+
+#resumepaper {
+background-color: #f2f2f2;
+}
+
+hr {
+margin-top: 5px;
+margin-bottom: 0px;
+border-top: 2px solid #BFBFBF;
+}
+
+.grey-t {
+color: grey;
+}
+
+.p-no-line-feed {
+display: inline;
+}
+
+#refrow {
+margin-top: 10px;
+}
+
+#sidebar {
+top: 10px;
+width: 195px;
+height: 150px;
+}
+
+#showcasebody{
+margin-top: 25px;
+}
+
+.showcase {
+background-color: #f2f2f2;
+border-radius: 4px;
+border: 1px solid #BFBFBF;
+width: 100%;
+height: 100%;
+}
+
+.showcasetext {
+margin: 5px 5px 5px 5px;
+}
+
+#footer {
+margin-top: 35px;
+border-top: 2px solid grey;
+}

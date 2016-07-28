@@ -37,124 +37,18 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<!-- Custom Styles for this File 
-<link href="bootstrap-3.3.6-dist/css/starter-theme.css" rel="stylesheet">
--->
+<!-- Custom Styles for this File --> 
+<link href="index.css" rel="stylesheet">
 
 
 <!-- 
 =======================================================
-Document Specific Stlye Changes Specified Here 
-======================================================= -->
+Document Specific Style Changes Specified Here 
+======================================================= 
 <style type="text/css">
 
-#navi {
-height: 41px;
-border-bottom: 2px solid grey;
-}
-
-#myname { padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; border-bottom: none; }
-/* Center Pills/Tabs for NavBar */
-.center-pills {
-display: inline-block;
-}
- 	
-/* Navigation Bar Tabs Appearance Changes (Tabs Visible on Medium+ Displays) */	
-
-.nav-tabs > li > a {
-border-radius: 4px 4px 0 0;
-border: none;
-margin-left: 0px;
-margin-right: 0px;
-}
-
-.nav-tabs > li > a:focus{
-
-outline: none;
-border-radius: 4px 4px 2px 2px;
-border: none;
-border-bottom: none;
-margin-left: 0px;
-margin-right: 0px;
-margin-bottom: -2px;
-/* Border/Shadow of Tab (Manilla Folder)*/    
--webkit-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
--moz-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
-}
-
-.nav-tabs > li > a:hover{
-
-outline: none;
-border-radius: 4px 4px 2px 2px;
-border: none;
-border-bottom: 1px solid grey;
-margin-left: 0px;
-margin-right: 0px;
-margin-bottom: -1px;
-/* Border/Shadow of Tab (Manilla Folder)*/
--webkit-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
--moz-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
-box-shadow:inset 0px 2px 0px 1px #BFBFBF;
-}
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li.active > a:hover{
-
-outline: none;
-border-radius: 4px 4px 2px 2px;
-border: none;
-border-bottom: 1px solid white;
-margin-left: 0px;
-margin-right: 0px;
-margin-bottom: -2px;
-/* Border/Shadow of Tab (Manilla Folder)*/
--webkit-box-shadow:inset 0px 2px 0px 1px grey;
--moz-box-shadow:inset 0px 2px 0px 1px grey;
-box-shadow:inset 0px 2px 0px 1px grey;
-}
-
-.nav-tabs {
-margin-left: 0px;
-margin-right: 0px;
-border-bottom: 2px solid grey;}
-
-#resumebody {
-padding-top: 15px;
-}
-
-.resumeheaders {
-color: black;
-font-size: 25px;
-letter-spacing: 2px;
-}
-
-hr {
-margin-top: 5px;
-margin-bottom: 0px;
-border-top: 2px solid #BFBFBF;
-}
-
-.grey-t {
-color: grey;
-}
-
-.p-no-line-feed {
-display: inline;
-}
-
-#refrow {
-margin-top: 10px;
-}
-
-#sidebar {
-top: 10px;
-width: 195px;
-height: 100px;
-}
-
 </style>
+-->
 
 <!-- Theme CSS through MaxCDN (cached, can make website faster)-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
@@ -179,7 +73,7 @@ CREATED: July 23, 2016
 LASTUPDATE: July 26, 2016
 =======================================================================================
 -->
-<div class="container-fluid">
+<div class="container-fluid" id="top">
 <div class="page-header" id="myname">
 <h1 class="text-center"><strong>Colton Eakins</strong></h1>
 </div></div>
@@ -188,8 +82,7 @@ LASTUPDATE: July 26, 2016
 <div class="container-fluid text-center hidden-xs" id="navi">
 <ul class="nav nav-tabs center-pills" role="tablist">
 <li role="presentation" class="active"><a href="index.html" aria-controls="resume" role="tab">Resume</a></li>
-<li role="presentation"><a href="resume.html" aria-controls="portfolio" role="tab">Portfolio</a></li>
-<li role="presentation"><a href="anthology.html" aria-controls="anthology" role="tab">Anthology</a></li>
+<li role="presentation"><a href="portfolio.html" aria-controls="portfolio" role="tab">Portfolio</a></li>
 <li role="presentation"><a href="contact.html" aria-controls="contact" role="tab">Contact</a></li>
 </ul>
 </div>
@@ -199,7 +92,6 @@ LASTUPDATE: July 26, 2016
 <ul class="nav nav-pills nav-stacked center-pills">
 <li role="presentation" class="active"><a href="index.html" aria-controls="resume" role="pill">Resume</a></li>
 <li role="presentation"><a href="portfolio.html" aria-controls="portfolio" role="pill">Portfolio</a></li>
-<li role="presentation"><a href="anthology.html" aria-controls="anthology" role="pill">Anthology</a></li>
 <li role="presentation"><a href="contact.html" aria-controls="contact" role="pill">Contact</a></li>
 </ul>
 </div>
@@ -218,8 +110,8 @@ Tab panes
 <div class="container center-block" id="resumebody">
 
 	<div class="row">
-		<div class="col-xs-12 col-md-10">
-			<div class="upper-case resumeheaders">
+		<div class="col-xs-12 col-md-10" id="resumepaper">
+			<div class="upper-case resumeheaders" id="education">
 			<strong>E<small>DUCATION</small></strong>
 			<hr/>
 			</div>
@@ -241,7 +133,7 @@ Tab panes
 			</div>	
 			
 			
-			<div class="upper-case resumeheaders">
+			<div class="upper-case resumeheaders" id="workhistory">
 			<strong>W<small>ORK</small> H<small>ISTORY</small></strong>
 			<hr/>
 			</div>
@@ -320,14 +212,14 @@ Tab panes
 				<div class="col-xs-12">
 				<em>Mathematics Tutor, Tutoring Services</em><br>
 				<ul>
-				<li>Tutored mathematics in classrooms, small groups, and one-on-one sessions. Met with College of DuPage professors weekly to discuss learning techniques."
+				<li>Tutored mathematics in classrooms, small groups, and one-on-one sessions. Met with College of DuPage professors weekly to discuss learning techniques.
 				</ul>
 				</div>
 			</div>	
 
 			
 			
-			<div class="upper-case resumeheaders">
+			<div class="upper-case resumeheaders" id="skills">
 			<strong>S<small>KILLS</small></strong>
 			<hr/>
 			</div>
@@ -354,7 +246,7 @@ Tab panes
 			</div>	
 
 			
-			<div class="upper-case resumeheaders">
+			<div class="upper-case resumeheaders" id="references">
 			<strong>R<small>EFERENCES</small></strong>
 			<hr/>
 			</div>
@@ -376,20 +268,28 @@ Tab panes
 
 		</div>
 
-		
-
-
 
 		<div class="col-md-2 hidden-xs hidden-sm" role="complemenetary">
 			<div class="panel panel-default" id="sidebar" data-spy="affix" data-offset-top="141">
-			<div class="panel-heading">
+			<div class="panel-heading text-center">
 			<h3 class="panel-title"><strong>Quick Links</strong></h3>
 			</div>
-			<div class="panel-body">
-			Place Links Here!
+			<div class="panel-body text-center">
+			<a href="#education">Education</a><br/>
+			<a href="#workhistory">Work History</a></br/>
+			<a href="#skills">Skills</a><br/>
+			<a href="#references">References</a><br/>
 			</div>
 			</div>
 		</div>
+	</div>
+
+</div>
+<div class="container-fluid " id="footer">
+	<div class="row">
+	<div class="col-xs-12 text-right">
+	Back to <a href="#top">Top</a>. 
+	</div>
 	</div>
 </div>
 
