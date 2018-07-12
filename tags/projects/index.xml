@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Colton Eakins</title>
+    <link>/tags/projects/</link>
+    <description>Recent content in Projects on Colton Eakins</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Thu, 12 Jul 2018 12:55:00 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>B.O.T. Bot</title>
+      <link>/project/botbot/</link>
+      <pubDate>Thu, 12 Jul 2018 12:55:00 -0500</pubDate>
+      
+      <guid>/project/botbot/</guid>
+      <description>B.O.T. Bot is a website spider that uses the Scrapy framework. It is specific to legacy websites from 3 affiliates of Internet Brands.
+The program uses advanced website scraping techniques and several APIs.
+The program solves a major problem because it drastically cut down the time it takes to upgrade sites from legacy systems to their more modern counterparts.
+Highlights: Python-based, Cross-Platform (Runs on Windows, MacOS, and Linux), Asynchronous Networking, User-Friendly GUI</description>
+    </item>
+    
+    <item>
+      <title>Stargazer</title>
+      <link>/project/stargazer/</link>
+      <pubDate>Thu, 12 Jul 2018 12:45:00 -0500</pubDate>
+      
+      <guid>/project/stargazer/</guid>
+      <description>Stargazer uses APIs provided by ProPublica and GuideStar. It acquires contact information for nonprofit organizations based on a keyword search.
+The program conveniently exports the information into various formats. It was created for a fundraising company to acquire leads.
+Highlights: APIs, Text User Interface, Python</description>
+    </item>
+    
+  </channel>
+</rss>
